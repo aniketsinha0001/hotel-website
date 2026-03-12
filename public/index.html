@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Luxury Grand Hotel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Luxury Grand Hotel</h1>
+<p>Modern Spacious Luxury Stay</p>
+</header>
+
+<nav>
+<a href="#rooms">Rooms</a>
+<a href="#restaurant">Restaurant</a>
+<a href="#lounge">Party Lounge</a>
+<a href="#booking">Book Now</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h2>Experience Luxury & Comfort</h2>
+</section>
+
+<section id="rooms">
+<h2>Our Rooms</h2>
+<div class="room">Deluxe Room</div>
+<div class="room">Executive Suite</div>
+<div class="room">Presidential Suite</div>
+</section>
+
+<section id="restaurant">
+<h2>Restaurant</h2>
+<p>Fine dining with international cuisines.</p>
+</section>
+
+<section id="lounge">
+<h2>Party Lounge</h2>
+<p>Perfect space for birthdays, weddings and events.</p>
+</section>
+
+<section id="booking">
+<h2>Book Your Stay</h2>
+
+<input id="name" placeholder="Name"><br>
+<input id="phone" placeholder="Phone (with country code)"><br>
+
+<select id="roomType">
+<option>Deluxe Room</option>
+<option>Executive Suite</option>
+<option>Presidential Suite</option>
+</select><br>
+
+<label>Check-in</label>
+<input type="date" id="checkin"><br>
+
+<label>Check-out</label>
+<input type="date" id="checkout"><br>
+
+<button onclick="bookRoom()">Book Now</button>
+
+<p id="status"></p>
+
+</section>
+
+<section id="contact">
+<h2>Contact & Location</h2>
+<p>Phone: +91-XXXXXXXXXX</p>
+<p>Email: info@luxurygrandhotel.com</p>
+<p>Location: City Center, India</p>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
