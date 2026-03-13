@@ -2,7 +2,7 @@
 {
   "name": "hotel-website",
   "version": "1.0.0",
-  "description": "Hotel booking website",
+  "description": "Hotel Garv Residencia",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
