@@ -26,7 +26,7 @@ text-decoration:none;
 
 .hero{
 height:350px;
-background:url('https://69b41023d7351016cf20c1d3.imgix.net/garvmainpage/garvHotel.png') center/cover;
+background:url('https://69b41023d7351016cf20c1d3.imgix.net/garvmainpage/garvHotel.png') center/100% 100% no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
