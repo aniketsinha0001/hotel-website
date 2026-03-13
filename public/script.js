@@ -1,22 +1,23 @@
 
-async function bookRoom(){
+async function book(){
 
-const data = {
-name: document.getElementById("name").value,
-phone: document.getElementById("phone").value,
-roomType: document.getElementById("roomType").value,
-checkin: document.getElementById("checkin").value,
-checkout: document.getElementById("checkout").value
+const data={
+name:document.getElementById("name").value,
+phone:document.getElementById("phone").value,
+room:document.getElementById("room").value,
+checkin:document.getElementById("checkin").value,
+checkout:document.getElementById("checkout").value,
+payment:document.getElementById("payment").value
 };
 
-const res = await fetch('/book',{
+const res=await fetch('/book',{
 method:'POST',
 headers:{'Content-Type':'application/json'},
 body:JSON.stringify(data)
 });
 
-const result = await res.json();
+const result=await res.json();
 
 document.getElementById("status").innerHTML =
-result.message + "<br><a href='"+result.whatsapp+"' target='_blank'>Send WhatsApp Confirmation</a>";
+result.message + "<br><a target='_blank' href='"+result.whatsapp+"'>Send WhatsApp confirmation</a>";
 }

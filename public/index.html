@@ -2,75 +2,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Luxury Grand Hotel</title>
+<title>Royal Palace Hotel</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<h1>Luxury Grand Hotel</h1>
-<p>Modern Spacious Luxury Stay</p>
+<h1>Royal Palace Hotel</h1>
+<p>Luxury Stay • Restaurant • Party Lounge</p>
 </header>
 
 <nav>
 <a href="#rooms">Rooms</a>
 <a href="#restaurant">Restaurant</a>
 <a href="#lounge">Party Lounge</a>
-<a href="#booking">Book Now</a>
+<a href="#booking">Booking</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <section class="hero">
-<h2>Experience Luxury & Comfort</h2>
+<h2>Welcome to Royal Palace Hotel</h2>
 </section>
 
 <section id="rooms">
 <h2>Our Rooms</h2>
-<div class="room">Deluxe Room</div>
-<div class="room">Executive Suite</div>
-<div class="room">Presidential Suite</div>
+
+<div class="room">
+<h3>Deluxe Room</h3>
+<p>Modern luxury room</p>
+</div>
+
+<div class="room">
+<h3>Executive Suite</h3>
+<p>Premium business suite</p>
+</div>
+
+<div class="room">
+<h3>Presidential Suite</h3>
+<p>Ultra luxury experience</p>
+</div>
+
 </section>
 
 <section id="restaurant">
 <h2>Restaurant</h2>
-<p>Fine dining with international cuisines.</p>
+<p>Multi cuisine fine dining experience.</p>
 </section>
 
 <section id="lounge">
 <h2>Party Lounge</h2>
-<p>Perfect space for birthdays, weddings and events.</p>
+<p>Perfect for weddings and corporate events.</p>
 </section>
 
 <section id="booking">
-<h2>Book Your Stay</h2>
+
+<h2>Book Room</h2>
 
 <input id="name" placeholder="Name"><br>
-<input id="phone" placeholder="Phone (with country code)"><br>
+<input id="phone" placeholder="Phone with country code"><br>
 
-<select id="roomType">
+<select id="room">
 <option>Deluxe Room</option>
 <option>Executive Suite</option>
 <option>Presidential Suite</option>
-</select><br>
+</select>
 
-<label>Check-in</label>
-<input type="date" id="checkin"><br>
+<label>Checkin</label>
+<input type="date" id="checkin">
 
-<label>Check-out</label>
-<input type="date" id="checkout"><br>
+<label>Checkout</label>
+<input type="date" id="checkout">
 
-<button onclick="bookRoom()">Book Now</button>
+<label>Payment Mode</label>
+<select id="payment">
+<option>Pay at Hotel</option>
+<option>UPI</option>
+<option>Card</option>
+</select>
+
+<button onclick="book()">Book Now</button>
 
 <p id="status"></p>
 
 </section>
 
 <section id="contact">
-<h2>Contact & Location</h2>
-<p>Phone: +91-XXXXXXXXXX</p>
-<p>Email: info@luxurygrandhotel.com</p>
-<p>Location: City Center, India</p>
+
+<h2>Contact</h2>
+<p>Phone: +91XXXXXXXXXX</p>
+<p>Email: booking@royalpalacehotel.com</p>
+
+<iframe
+width="100%"
+height="300"
+src="https://maps.google.com/maps?q=hotel&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 </section>
 
 <script src="script.js"></script>
